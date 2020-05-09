@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+body {
+  background: #eee;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+h1 {
+  margin: 30px auto;
+}
+.container > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 20px;
+}
+.container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px 0;
+  background: white;
+  height: 200px;
+}
+.card ul {
+  list-style: none;
+}
+.card li {
+  padding: 10px;
+  margin: 3px 0;
+  background: #eee;
+  border-radius: 3px;
+}
+.card li.empty {
+  background: rgb(255, 30, 30);
+  color: white;
+}
